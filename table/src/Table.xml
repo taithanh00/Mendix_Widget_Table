@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.table.Table" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Table</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="AddTasks" type="action">
+                <caption>Default value</caption>
+                <description>Sample text input</description>
+            </property>
+            <property key="Tasks" type="datasource" isList="true">
+                <caption>Default value</caption>
+                <description>Datasource</description>
+            </property>
+            <property key="TaskName" type="attribute" dataSource="Tasks">
+                <caption>TaskName</caption>
+                <description>Name of the task</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="CriticalLevel" type="attribute" dataSource="Tasks">
+                <caption>Critical Level</caption>
+                <description>Name of the Critical Level</description>
+                <attributeTypes>
+                    <attributeType name="Enum" />
+                </attributeTypes>
+            </property>
+            <property key="StartDate" type="attribute" dataSource="Tasks">
+                <caption>StartDate</caption>
+                <description>What time is this task will be start</description>
+                <attributeTypes>
+                    <attributeType name="DateTime" />
+                </attributeTypes>
+            </property>
+            <property key="EndDate" type="attribute" dataSource="Tasks">
+                <caption>EndDate</caption>
+                <description>What time is this task will be end</description>
+                <attributeTypes>
+                    <attributeType name="DateTime" />
+                </attributeTypes>
+            </property>
+            <property key="StartTime" type="attribute" dataSource="Tasks">
+                <caption>StartTime</caption>
+                <description>What time is this task will be start by hour?</description>
+                <attributeTypes>
+                    <attributeType name="DateTime" />
+                </attributeTypes>
+            </property>
+            <property key="QualityofEmployeeWhoJoinThatTask" type="attribute" dataSource="Tasks">
+                <caption>Number of employee will join</caption>
+                <description>Quality</description>
+                <attributeTypes>
+                    <attributeType name="Integer" />
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
